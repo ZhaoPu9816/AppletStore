@@ -28,6 +28,19 @@
         <router-view></router-view>
       </div>
     </div>
+    <div class="personal-tab">
+      <el-tabs :tab-position="tabPosition" style="height: 500px;">
+        <el-tab-pane class="personal-tab-pane" label="个人资料">个人资料</el-tab-pane>
+        <el-tab-pane label="我的收藏">我的收藏</el-tab-pane>
+        <el-tab-pane label="发布小程序">发布小程序</el-tab-pane>
+        <el-tab-pane label="小程序管理">小程序管理</el-tab-pane>
+        <el-tab-pane label="小程序推广">小程序推广</el-tab-pane>
+        <el-tab-pane label="推广管理">推广管理</el-tab-pane>
+        <el-tab-pane label="认领小程序">认领小程序</el-tab-pane>
+        <el-tab-pane label="转卖小程序">转卖小程序</el-tab-pane>
+        <el-tab-pane label="用户充值">用户充值</el-tab-pane>
+      </el-tabs>
+    </div>
   </div>
 </template>
 
@@ -36,7 +49,9 @@ import Head from '../Index/Head.vue'
 import Down from '../Index/Down.vue'
 export default {
   data () {
-    return {}
+    return {
+      tabPosition: 'left'
+    }
   },
   components: {
     Head,

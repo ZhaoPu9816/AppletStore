@@ -65,6 +65,6 @@ export default {
 }
 </script>
 
-<style>
-@import url("../../css/news.css");
+<style scoped lang="less">
+@import url("../../css/news.less");
 </style>

@@ -3,16 +3,12 @@
     <!-- 顶部导航 -->
     <Head></Head>
     <!--轮播-->
-    <div class="container" id="container">
-      <div id="btn-prev" class="btn-ctrl"><i class="iconfont icon-zuoanniu"></i></div>
-      <div id="btn-next" class="btn-ctrl"><i class="iconfont icon-youanniu"></i></div>
-      <ul id="inner-list">
-        <li><img src="../../img/lunbo1.jpg" alt="" /></li>
-        <li><img src="../../img/lunbo2.jpg" alt="" /></li>
-        <li><img src="../../img/lunbo3.jpg" alt="" /></li>
-      </ul>
-      <ul id="dot-list">
-      </ul>
+    <div class="carousel">
+      <el-carousel :interval="3000" height="450px" arrow="always">
+        <el-carousel-item v-for="item in imagesbox" :key="item.id">
+          <img :src="item.idView" class="carousel-img" />
+        </el-carousel-item>
+      </el-carousel>
       <div class="select">
         <input type="text" placeholder="输入小程序关键词" /><button class="pointer"><i class="iconfont icon-sousuo1"></i><span>搜索</span></button>
       </div>
@@ -494,16 +490,31 @@
 
 <script>
 import {jQuery} from 'js/jquery-2.1.0.js'
-import {carousel} from 'js/carousel.js'
+// import {carousel} from 'js/carousel.js'
+// import {barrage} from 'js/barrage.js'
+// import {sendBarrage} from 'js/sendBarrage.js'
 import Head from './Head.vue'
 import Down from './Down.vue'
 export default {
   data () {
-    return {}
+    return {
+      imagesbox: [{
+        id: 1,
+        idView: require('../../img/lunbo1.jpg')
+      }, {
+        id: 2,
+        idView: require('../../img/lunbo2.jpg')
+      }, {
+        id: 3,
+        idView: require('../../img/lunbo3.jpg')
+      }]
+    }
   },
   mounted () {
     console.log(jQuery)
-    console.log(carousel)
+    // console.log(carousel)
+    // console.log(barrage)
+    // console.log(sendBarrage)
   },
   components: {
     Head,
@@ -519,3 +530,6 @@ export default {
   height: 100%;
 }
 </style>
+<style scoped lang="less" src="../../css/index.less"></style>
+<style scoped lang="less" src="../../css/sign.less"></style>
+<style scoped lang="less" src="../../css/personal.less"></style>

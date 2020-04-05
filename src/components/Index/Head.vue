@@ -3,10 +3,10 @@
   <div class="top-nav">
     <div class="top-nav-text">
       <div class="logo pointer left">
-        <a href="index.html" class="iblock pointer left">
+        <router-link to="/" class="iblock pointer left">
           <i class="iconfont icon-xiaochengxu left"></i>
           <span class="left">小程序商店</span>
-        </a>
+        </router-link>
       </div>
       <ul>
         <router-link to="/"><li>小程序</li></router-link>

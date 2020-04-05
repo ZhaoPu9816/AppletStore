@@ -40,7 +40,4 @@ export default {
 
 <style scoped lang="less">
 @import url("../../css/newsdetail.less");
-.newsdetail-background {
-  background-color: rgb(245,245,245);
-}
 </style>

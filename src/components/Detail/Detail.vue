@@ -100,6 +100,6 @@ export default {
 }
 </script>
 
-<style>
-@import url("../../css/detail.css");
+<style scoped lang="less">
+@import url("../../css/detail.less");
 </style>

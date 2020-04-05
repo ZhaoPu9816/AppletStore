@@ -1,7 +1,7 @@
 window.onload = function() {
 	var eleInners = document.getElementById('inner-list'),
 		eleDots = document.getElementById('dot-list'),
-		liImgs = eleInners.getElementsByTagName('li'),
+		liImgs = eleInners.getElementsByClassName('inner-list-li'),
 		liDots = eleDots.children,
 		elePrev = document.getElementById('btn-prev'),
 		eleNext = document.getElementById('btn-next'),

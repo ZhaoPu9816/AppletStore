@@ -85,18 +85,32 @@
     }
     .personal-collection {
       display: block;
-      li {
-        float: left;
-        margin-left: 20px;
-        border-bottom: 3px solid white;
-        cursor: pointer;
+      span {
+        font-size: 18px;
       }
-      li:hover {
-        border-bottom: 3px solid black;
+      i {
+        font-size: 15px;
+        margin-right: 5px;
       }
-      li:active {
-        border-bottom: 3px solid black;
+      .collection-box,
+      .collection-box ul {
+        width: 100%;
+        display: inline-block;
+      }
+      .collection-box {
+        li {
+          width: 50%;
+          padding: 10px;
+          float: left;
+        }
       }
     }
+  }
+}
+.personal-tab {
+  display: none;
+  .personal-tab-pane {
+    margin-left: 20px;
+    font-size: 30px;
   }
 }
